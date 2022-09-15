@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceCodeApi", "SourceCodeApi\SourceCodeApi.csproj", "{91ABD079-DD83-476E-9B33-F2648263E1CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceCodeApi.Tests", "SourceCodeApi.Tests\SourceCodeApi.Tests.csproj", "{33E8ACF5-4B31-461E-A333-C1AC73A3C67B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91ABD079-DD83-476E-9B33-F2648263E1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91ABD079-DD83-476E-9B33-F2648263E1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91ABD079-DD83-476E-9B33-F2648263E1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91ABD079-DD83-476E-9B33-F2648263E1CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E8ACF5-4B31-461E-A333-C1AC73A3C67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E8ACF5-4B31-461E-A333-C1AC73A3C67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E8ACF5-4B31-461E-A333-C1AC73A3C67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E8ACF5-4B31-461E-A333-C1AC73A3C67B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B9174E0-9687-42D5-94A5-14A351E4605C}
+	EndGlobalSection
+EndGlobal
