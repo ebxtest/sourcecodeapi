@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using SourceCodeApi.Handlers;
 using SourceCodeApi.Model;
 using SourceCodeApi.Model.Queries;
 

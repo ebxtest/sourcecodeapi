@@ -18,11 +18,22 @@ public class GetLatestContributorsQueryHandler : IRequestHandler<GetLatestContri
 
     public async Task<List<ContributorCommit>> Handle(GetLatestContributorsQuery request, CancellationToken cancellationToken)
     {
-        var result = await _sourceCodeClient.GetLatestContributorCommits(
+        var result = await _sourceCodeClient.GetAllCommits(
             request.RepositoryOwner, 
             request.Repository,
-            request.MaxResult, cancellationToken);
+            cancellationToken);
 
-        return result;
+        var latestCommits = result
+            .Select(x => new ContributorCommit
+            {
+                Contributor = x.AuthorName,
+                CommitTimeStamp = x.TimeStamp,
+                CommitId = x.Id
+            })
+            .OrderByDescending(x => x.CommitTimeStamp)
+            .Take(request.MaxResult)
+            .ToList();
+
+        return latestCommits;
     }
 }

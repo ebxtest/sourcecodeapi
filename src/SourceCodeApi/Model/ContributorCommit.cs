@@ -2,7 +2,7 @@
 
 public class ContributorCommit
 {
-    public string ContributorEmail { get; set; }
-    public string CommitId { get;}
+    public string Contributor { get; set; }
+    public string CommitId { get; set; }
     public DateTime CommitTimeStamp { get; set; }
 }

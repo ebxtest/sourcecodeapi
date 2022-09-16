@@ -4,5 +4,5 @@ namespace SourceCodeApi.Client;
 
 public interface ISourceCodeClient
 {
-    Task<List<ContributorCommit>> GetLatestContributorCommits(string owner, string repository, int maxResult, CancellationToken cancellationToken);
+    Task<IEnumerable<SourceCodeCommit>> GetAllCommits(string owner, string repository, CancellationToken cancellationToken);
 }
