@@ -1,4 +1,4 @@
-#SourceCodeApi
+# SourceCodeApi
 
 ## Running the Application
 
@@ -48,7 +48,7 @@ I have also introduced a bit of abstraction on the SourceCode third party client
 
 I hope my notes above make sense.
 
-Tnanks for the opportunity
+Thanks for the opportunity
 
 
 
